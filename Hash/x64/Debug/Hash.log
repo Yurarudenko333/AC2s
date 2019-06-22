@@ -1,0 +1,21 @@
+﻿  Test.cpp
+e:\programming\c++\2 course\data structures\veres_algorithmics_2semester\hash\test.cpp(42): warning C4566: character represented by universal-character-name '\u03A9' cannot be represented in the current code page (1252)
+e:\programming\c++\2 course\data structures\veres_algorithmics_2semester\hash\hashmap.tpp(5): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+  e:\programming\c++\2 course\data structures\veres_algorithmics_2semester\hash\hashmap.tpp(4): note: while compiling class template member function 'int MINE_STL::Map<Product,int,MINE_STL::Hasher<Product>>::getBucketIndex(const K &)'
+          with
+          [
+              K=Product
+          ]
+  e:\programming\c++\2 course\data structures\veres_algorithmics_2semester\hash\hashmap.h(181): note: see reference to function template instantiation 'int MINE_STL::Map<Product,int,MINE_STL::Hasher<Product>>::getBucketIndex(const K &)' being compiled
+          with
+          [
+              K=Product
+          ]
+  e:\programming\c++\2 course\data structures\veres_algorithmics_2semester\hash\test.cpp(58): note: see reference to class template instantiation 'MINE_STL::Map<Product,int,MINE_STL::Hasher<Product>>' being compiled
+  Branch.cpp
+e:\programming\c++\2 course\data structures\veres_algorithmics_2semester\hash\branch.cpp(11): warning C4244: '=': conversion from 'double' to 'size_t', possible loss of data
+  Product.cpp
+e:\programming\c++\2 course\data structures\veres_algorithmics_2semester\hash\product.cpp(10): warning C4244: '=': conversion from 'double' to 'size_t', possible loss of data
+  Source.cpp
+  Generating Code...
+  Hash.vcxproj -> E:\Programming\C++\2 course\Data Structures\Veres_Algorithmics_2semester\x64\Debug\Hash.exe
