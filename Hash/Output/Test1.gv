@@ -1,0 +1,49 @@
+digraph{
+rankdir=LR;
+subgraph steps{
+rank = same;
+item1->item2->item3->item4->item6->item7->item12->item14->item18->item19}
+subgraph cluster1 {node[style = filled];label="process #1";color = blue;
+"node1.0"[label="<p>00A9FD90|<name>Default name|<id>5";shape=record];
+"node1.0":p}
+item1->"node1.0":p
+subgraph cluster2 {node[style = filled];label="process #2";color = blue;
+"node2.0"[label="<p>00AA0068|<name>Predator Helios 300 Gaming Laptop|<id>11";shape=record];
+"node2.0":p}
+item2->"node2.0":p
+subgraph cluster3 {node[style = filled];label="process #3";color = blue;
+"node3.0"[label="<p>00A9FF98|<name>Default name|<id>1";shape=record];
+"node3.0":p}
+item3->"node3.0":p
+subgraph cluster4 {node[style = filled];label="process #4";color = blue;
+"node4.0"[label="<p>00A9FCC0|<name>Gold Standard 100% Whey Protein Powder|<id>13";shape=record];
+"node4.0":p}
+item4->"node4.0":p
+subgraph cluster6 {node[style = filled];label="process #6";color = blue;
+"node6.0"[label="<p>00A9FBF0|<name>Modern Series Jean|<id>9";shape=record];
+"node6.0":p}
+item6->"node6.0":p
+subgraph cluster7 {node[style = filled];label="process #7";color = blue;
+"node7.0"[label="<p>00A9FEC8|<name>Logo Hoodie Sweatshirt|<id>6";shape=record];
+"node7.0":p}
+item7->"node7.0":p
+subgraph cluster12 {node[style = filled];label="process #12";color = blue;
+"node12.0"[label="<p>00AA00D0|<name>Default name|<id>4";shape=record];
+"node12.1"[label="<p>00A9FDF8|<name>Classic 2-Eye Boat Shoe|<id>10";shape=record];
+"node12.2"[label="<p>00AA0000|<name>HD 599 Open Back Headphone|<id>12";shape=record];
+"node12.0":p->"node12.1":p->"node12.2":p}
+item12->"node12.0":p
+subgraph cluster14 {node[style = filled];label="process #14";color = blue;
+"node14.0"[label="<p>00A9FF30|<name>Mid Wireless On-Ear Headphone|<id>7";shape=record];
+"node14.1"[label="<p>00A9FC58|<name>North Protection Hooded Jacket|<id>8";shape=record];
+"node14.0":p->"node14.1":p}
+item14->"node14.0":p
+subgraph cluster18 {node[style = filled];label="process #18";color = blue;
+"node18.0"[label="<p>00A9FAB8|<name>Default name|<id>2";shape=record];
+"node18.0":p}
+item18->"node18.0":p
+subgraph cluster19 {node[style = filled];label="process #19";color = blue;
+"node19.0"[label="<p>00A9FB20|<name>Default name|<id>3";shape=record];
+"node19.0":p}
+item19->"node19.0":p
+}}

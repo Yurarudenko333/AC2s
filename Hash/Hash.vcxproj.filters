@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Header Files\HashTable">
+      <UniqueIdentifier>{ba340abb-304d-4cdf-8c43-0fc6d038aed8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\HashTable">
+      <UniqueIdentifier>{214a6567-894b-4dcf-b2e3-74c786577541}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\HashTable\HashTableElem">
+      <UniqueIdentifier>{d5f45524-9af2-4c3f-a8c6-238be2eafff3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\HashTable\HashTableElem">
+      <UniqueIdentifier>{6700ce2a-97cb-47b7-9dc8-d0eefff9f5ea}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\OOP_Architecture">
+      <UniqueIdentifier>{02db34d4-3d92-41ee-a2df-54ecc562b0bf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\OOP_Architecture">
+      <UniqueIdentifier>{a63243fc-3ad3-448e-8ca5-b5e1eb9b9d07}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Testing">
+      <UniqueIdentifier>{d447f67f-142c-4f14-88ab-4f0a73fb01e9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Testing">
+      <UniqueIdentifier>{e4342841-2f37-4189-a21f-278071ce7f40}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Source.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Product.cpp">
+      <Filter>Source Files\OOP_Architecture</Filter>
+    </ClCompile>
+    <ClCompile Include="Branch.cpp">
+      <Filter>Source Files\OOP_Architecture</Filter>
+    </ClCompile>
+    <ClCompile Include="Test.cpp">
+      <Filter>Source Files\Testing</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="HashMap.h">
+      <Filter>Header Files\HashTable</Filter>
+    </ClInclude>
+    <ClInclude Include="Hasher.h">
+      <Filter>Header Files\HashTable</Filter>
+    </ClInclude>
+    <ClInclude Include="HashNode.h">
+      <Filter>Header Files\HashTable\HashTableElem</Filter>
+    </ClInclude>
+    <ClInclude Include="Test.h">
+      <Filter>Header Files\Testing</Filter>
+    </ClInclude>
+    <ClInclude Include="Product.h">
+      <Filter>Header Files\OOP_Architecture</Filter>
+    </ClInclude>
+    <ClInclude Include="Branch.h">
+      <Filter>Header Files\OOP_Architecture</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="HashMap.tpp">
+      <Filter>Source Files\HashTable</Filter>
+    </None>
+  </ItemGroup>
+</Project>
