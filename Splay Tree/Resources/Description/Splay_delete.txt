@@ -1,0 +1,16 @@
+Splay Tree | Set 3 (Delete)
+Following are the different cases to delete a key k from splay tree.
+
+If Root is NULL: We simply return the root.
+Else Splay the given key k. If k is present, then it becomes the new root. If not present, then last accessed leaf node becomes the new root.
+If new root’s key is not same as k, then return the root as k is not present.
+Else the key k is present.
+Split the tree into two trees Tree1 = root’s left subtree and Tree2 = root’s right subtree and delete the root node.
+Let the root’s of Tree1 and Tree2 be Root1 and Root2 respectively.
+If Root1 is NULL: Return Root2.
+Else, Splay the maximum node (node having the maximum value) of Tree1.
+After the Splay procedure, make Root2 as the right child of Root1 and return Root1.
+
+https://cdncontribute.geeksforgeeks.org/wp-content/uploads/tree-delete.jpg
+http://courses.cs.washington.edu/courses/cse326/01au/lectures/SplayTrees.ppt
+http://lcm.csa.iisc.ernet.in/dsa/node94.html

@@ -1,0 +1,46 @@
+digraph BST {
+    node [fontname="Arial"
+    fontsize = "16"
+    shape = "record"];
+node40[label="{000001D53FD065F8|pr:3|cabage|num:40|vegetables}"];
+node40 -> node41;
+node41[label="{000001D53FD06698|pr:2|carrot|num:45|vegetables}"];
+node41 -> node42;
+node42[label="{000001D53FD06738|pr:1|onion|num:35|vegetables}"];
+    null48[shape=point];
+    node42 -> null48;
+    null49[shape=point];
+    node42 -> null49;
+    null50[shape=point];
+    node41 -> null50;
+node40 -> node43;
+node43[label="{000001D53FD067D8|pr:4.25|tomato|num:12|vegetables}"];
+    null51[shape=point];
+    node43 -> null51;
+node43 -> node44;
+node44[label="{000001D53FCF3898|pr:6|bread|num:50|pastry}"];
+node44 -> node45;
+node45[label="{000001D53FD07CB8|pr:5.5|apple|num:30|fruits}"];
+    null52[shape=point];
+    node45 -> null52;
+    null53[shape=point];
+    node45 -> null53;
+node44 -> node46;
+node46[label="{000001D53FD07B78|pr:10|whole_wheat_bread|num:100|pastry}"];
+node46 -> node47;
+node47[label="{000001D53FD07C18|pr:7|rye_bread|num:25|pastry}"];
+    null54[shape=point];
+    node47 -> null54;
+    null55[shape=point];
+    node47 -> null55;
+node46 -> node48;
+node48[label="{000001D53FD06558|pr:13|cucumber|num:25|vegetables}"];
+    null56[shape=point];
+    node48 -> null56;
+node48 -> node49;
+node49[label="{000001D53FD07DF8|pr:30|grapes|num:10|fruits}"];
+    null57[shape=point];
+    node49 -> null57;
+    null58[shape=point];
+    node49 -> null58;
+}

@@ -1,0 +1,86 @@
+Splay Tree | Set 1 (Search)
+Search Operation
+The search operation in Splay tree does the standard BST search, in addition to search, it also splays 
+(move a Node to the root). If the search is successful, then the Node that is found is splayed and becomes 
+the new root. Else the last Node accessed prior to reaching the NULL is splayed and becomes the new root.
+There are following cases for the Node being accessed.
+
+1) Node is root We simply return the root, don’t do anything else as the accessed Node is already root.
+
+2) Zig: Node is child of root (the Node has no grandparent). Node is either a left child of root (we do a 
+right rotation) or Node is a right child of its parent (we do a left rotation).
+T1, T2 and T3 are subtrees of the tree rooted with y (on left side) or x (on right side)
+
+                y                                     x
+               / \     Zig (Right Rotation)          /  \
+              x   T3   – - – - – - – - - ->         T1   y 
+             / \       < - - - - - - - - -              / \
+            T1  T2     Zag (Left Rotation)            T2   T3
+
+3) Node has both parent and grandparent. There can be following subcases.
+……..3.a) Zig-Zig and Zag-Zag Node is left child of parent and parent is also left child of grand parent 
+(Two right rotations) OR Node is right child of its parent and parent is also right child of grand parent 
+(Two Left Rotations).
+
+Zig-Zig (Left Left Case):
+       G                        P                           X       
+      / \                     /   \                        / \      
+     P  T4   rightRotate(G)  X     G     rightRotate(P)  T1   P     
+    / \      ============>  / \   / \    ============>       / \    
+   X  T3                   T1 T2 T3 T4                      T2  G
+  / \                                                          / \ 
+ T1 T2                                                        T3  T4 
+
+Zag-Zag (Right Right Case):
+  G                          P                           X       
+ /  \                      /   \                        / \      
+T1   P     leftRotate(G)  G     X     leftRotate(P)    P   T4
+    / \    ============> / \   / \    ============>   / \   
+   T2   X               T1 T2 T3 T4                  G   T3
+       / \                                          / \ 
+      T3 T4                                        T1  T2
+……..3.b) Zig-Zag and Zag-Zig Node is left child of parent and parent is right child of grand parent 
+(Left Rotation followed by right rotation) OR Node is right child of its parent and parent is left child of 
+grand parent (Right Rotation followed by left rotation).
+
+Zag-Zig (Left Right Case):
+       G                        G                            X       
+      / \                     /   \                        /   \      
+     P   T4  leftRotate(P)   X     T4    rightRotate(G)   P     G     
+   /  \      ============>  / \          ============>   / \   /  \    
+  T1   X                   P  T3                       T1  T2 T3  T4 
+      / \                 / \                                       
+    T2  T3              T1   T2                                     
+
+Zig-Zag (Right Left Case):
+  G                          G                           X       
+ /  \                      /  \                        /   \      
+T1   P    rightRotate(P)  T1   X     leftRotate(P)    G     P
+    / \   =============>      / \    ============>   / \   / \   
+   X  T4                    T2   P                 T1  T2 T3  T4
+  / \                           / \                
+ T2  T3                        T3  T4  
+
+ The important thing to note is, the search or splay operation not only brings the searched key to 
+ root, but also balances the BST. For example in above case, height of BST is reduced by 1.
+
+ Summary
+1) Splay trees have excellent locality properties. Frequently accessed items are easy to find. Infrequent 
+items are out of way.
+2) All splay tree operations take O(Logn) time on average. Splay trees can be rigorously shown to run in 
+O(log n) average time per operation, over any sequence of operations (assuming we start from an empty tree)
+3) Splay trees are simpler compared to AVL and Red-Black Trees as no extra field is required in every tree node.
+4) Unlike AVL tree, a splay tree can change even with read-only operations like search.
+
+Example:
+
+ 
+         100                      100                       [20]
+         /  \                    /   \                        \ 
+       50   200                50    200                      50
+      /          search(20)    /          search(20)         /  \  
+     40          ======>     [20]         ========>         30   100
+    /            1. Zig-Zig    \          2. Zig-Zig         \     \
+   30               at 40       30            at 100         40    200  
+  /                               \     
+[20] 
