@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Header Files\Splay_tree">
+      <UniqueIdentifier>{0f90257e-9080-4c5c-bf5c-da4ab7b2436b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Splay_tree">
+      <UniqueIdentifier>{8b9576ac-7fa7-44a9-9c87-7d1a5a78e09d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Description">
+      <UniqueIdentifier>{de8eaed8-09be-4e8e-87c3-391a4fe43703}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\MyType">
+      <UniqueIdentifier>{f55f85fe-bc8b-4bc4-b7a9-650b3532d63c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\MyType">
+      <UniqueIdentifier>{d781aafa-adcf-4fda-81b9-e3cef7cc8a5a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\FoodInfo">
+      <UniqueIdentifier>{10883665-79bf-4a52-a3f8-60ea950cd243}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Source.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Splay_Tree\Splay_Tree.cpp">
+      <Filter>Source Files\Splay_tree</Filter>
+    </ClCompile>
+    <ClCompile Include="MyType\Food_object.cpp">
+      <Filter>Source Files\MyType</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Splay_Tree\Splay_Tree.h">
+      <Filter>Header Files\Splay_tree</Filter>
+    </ClInclude>
+    <ClInclude Include="MyType\Food_object.h">
+      <Filter>Header Files\MyType</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="Resources\Description\Splay_delete.txt">
+      <Filter>Resource Files\Description</Filter>
+    </Text>
+    <Text Include="Resources\Description\Splay_general.txt">
+      <Filter>Resource Files\Description</Filter>
+    </Text>
+    <Text Include="Resources\Description\Splay_insert.txt">
+      <Filter>Resource Files\Description</Filter>
+    </Text>
+    <Text Include="Resources\Description\Splay_search.txt">
+      <Filter>Resource Files\Description</Filter>
+    </Text>
+    <Text Include="Resources\FoodInfo\Products.txt">
+      <Filter>Resource Files\FoodInfo</Filter>
+    </Text>
+  </ItemGroup>
+</Project>

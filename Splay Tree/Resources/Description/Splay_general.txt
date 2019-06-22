@@ -1,0 +1,21 @@
+Splay Tree | Set 0 (General Description)
+The worst case time complexity of Binary Search Tree (BST) operations like search, delete, insert is O(n). 
+The worst case occurs when the tree is skewed. We can get the worst case time complexity as O(Logn) with AVL 
+and Red-Black Trees.
+Can we do better than AVL or Red-Black trees in practical situations?
+Like AVL and Red-Black Trees, Splay tree is also self-balancing BST. The main idea of splay tree is to bring 
+the recently accessed item to root of the tree, this makes the recently searched item to be accessible in O(1) 
+time if accessed again. The idea is to use locality of reference (In a typical application, 80% of the access 
+are to 20% of the items). Imagine a situation where we have millions or billions of keys and only few of them 
+are accessed frequently, which is very likely in many practical applications.
+
+All splay tree operations run in O(log n) time on average, where n is the number of entries in the tree. Any 
+single operation can take Theta(n) time in the worst case.
+
+Applications of Splay Trees
+Splay trees have become the most widely used basic data structure invented in the last 30 years, 
+because they’re the fastest type of balanced search tree for many applications.
+Splay trees are used in Windows NT (in the virtual memory, networking, and file system code), 
+the gcc compiler and GNU C++ library, the sed string editor, Fore Systems network routers, the most 
+popular implementation of Unix malloc, Linux loadable kernel modules, and in much other software 
+(Source: http://www.cs.berkeley.edu/~jrs/61b/lec/36)

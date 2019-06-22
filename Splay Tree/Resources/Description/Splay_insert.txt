@@ -1,0 +1,29 @@
+Splay Tree | Set 2 (Insert)
+Following are different cases to insert a key k in splay tree.
+
+1) Root is NULL: We simply allocate a new node and return it as root.
+2) Splay the given key k. If k is already present, then it becomes the new root. If not present, then 
+last accessed leaf node becomes the new root.
+
+3) If new root’s key is same as k, don’t do anything as k is already present.
+
+4) Else allocate memory for new node and compare root’s key with k.
+…….4.a) If k is smaller than root’s key, make root as right child of new node, copy left child of root 
+as left child of new node and make left child of root as NULL.
+…….4.b) If k is greater than root’s key, make root as left child of new node, copy right child of root 
+as right child of new node and make right child of root as NULL.
+
+5) Return new node as new root of tree.
+
+Example:
+
+ 
+          100                  [20]                             25     
+          /  \                   \                             /  \
+        50   200                  50                          20   50 
+       /          insert(25)     /  \        insert(25)           /  \  
+      40          ======>      30   100      ========>           30  100    
+     /          1. Splay(25)    \     \      2. insert 25         \    \
+    30                          40    200                         40   200   
+   /                                                          
+ [20]

@@ -1,0 +1,26 @@
+digraph BST {
+    node [fontname="Arial"
+    fontsize = "16"
+    shape = "record"];
+node5[label="{40}"];
+node5 -> node6;
+node6[label="{30}"];
+node6 -> node7;
+node7[label="{20}"];
+    null7[shape=point];
+    node7 -> null7;
+    null8[shape=point];
+    node7 -> null8;
+    null9[shape=point];
+    node6 -> null9;
+node5 -> node8;
+node8[label="{100}"];
+    null10[shape=point];
+    node8 -> null10;
+node8 -> node9;
+node9[label="{200}"];
+    null11[shape=point];
+    node9 -> null11;
+    null12[shape=point];
+    node9 -> null12;
+}
