@@ -1,0 +1,39 @@
+// BPlus Tree visualization
+digraph {
+node[shape=record]
+
+	2081642909880 [label="<ch0>|-195158|<ch1>|87524|<ch2>*"]
+	2081642909880:ch0 -> 2081643904864:ch0
+	2081642909880:ch1 -> 2081642910160:ch0
+	2081642909880:ch2 -> 2081642909824:ch0
+
+
+
+	2081643904864 [label="<ch0>|-887852|<ch1>|-622235|<ch2>*"]
+	2081643904864:ch0 -> 2081643817448:ch0
+	2081643904864:ch1 -> 2081642910104:ch0
+	2081643904864:ch2 -> 2081643904248:ch0
+	2081642910160 [label="<ch0>|-104549|<ch1>*"]
+	2081642910160:ch0 -> 2081643904192:ch0
+	2081642910160:ch1 -> 2081642909936:ch0
+	2081642909824 [label="<ch0>|242421|<ch1>|447272|<ch2>|873992|<ch3>*"]
+	2081642909824:ch0 -> 2081643904920:ch0
+	2081642909824:ch1 -> 2081643904976:ch0
+	2081642909824:ch2 -> 2081642909768:ch0
+	2081642909824:ch3 -> 2081642910048:ch0
+
+
+
+	2081643817448 [label="{{-963523|qttxendamjjectk}|{-901991|oeqstwkbmhqrqkw}}"]
+	2081642910104 [label="{{-887852|adzjlrfrjojfrhb}|{-790663|pqgcdhjeunqfwlh}}"]
+	2081643904248 [label="{{-622235|bbkumwcnolqejpp}|{-413961|wkighzwuvhfkkqv}}"]
+	2081643904192 [label="{{-195158|boydbvrktdvyqte}|{-152629|jhlddkybifyioik}}"]
+	2081642909936 [label="{{-104549|becwmwhytyrjqyz}|{-64486|dzcfkzkzssvkjly}}"]
+	2081643904920 [label="{{87524|oifvvzudhzokhzf}|{92122|ibdrfvdbzzoxuia}}"]
+	2081643904976 [label="{{242421|tgxggqvcwezfphd}|{422941|nculqlzxwnbxxnc}}"]
+	2081642909768 [label="{{447272|cyhemichwjbjsnu}|{668818|ozkocpwgegfvbnx}|{867721|zhtywfkyehnbygq}}"]
+	2081642910048 [label="{{873992|mhcocfmmxmwukxx}|{921682|grqdlwoquwtduri}|{941281|trzttljcvjwhzgl}}"]
+
+
+
+}
